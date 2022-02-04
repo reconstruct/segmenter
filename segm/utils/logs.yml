@@ -1,0 +1,3 @@
+root: runs/latest/ #runs/ade20k/ #runs/cityscapes/ #runs/reconstruct/
+logs:
+  seg: log.txt

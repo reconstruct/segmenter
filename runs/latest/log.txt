@@ -1,0 +1,2 @@
+{"train_loss": 0.45504776644770817, "train_learning_rate": 1.0000000000000025e-05, "val_pixel_accuracy": 89.44, "val_mean_accuracy": 38.17, "val_mean_iou": 31.99, "epoch": 4, "num_updates": 1860}
+{"train_loss": 0.5475776632146169, "train_learning_rate": 0.009937483969177336, "val_pixel_accuracy": 88.34, "val_mean_accuracy": 38.09, "val_mean_iou": 31.55, "epoch": 1, "num_updates": 744}
