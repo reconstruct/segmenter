@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = "ReconstructDataset"
-data_root = "data/reconstruct/"
+data_root = "media/storage1/juan/label)dataset/reconstruct/"
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True
 )
@@ -50,7 +50,7 @@ test_pipeline = [
 ]
 
 #TODO: The structure below belongs to the one in Cityscapes. This must be edited to match Reconstruct's folder structure
-'''
+
 data = dict(
     samples_per_gpu=2,
     workers_per_gpu=2,
@@ -83,4 +83,3 @@ data = dict(
         pipeline=test_pipeline,
     ),
 )
-'''

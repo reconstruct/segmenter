@@ -1,3 +1,32 @@
+# Before Running with Reconstruct Dataset:
+
+1. Download/fetch desired Reconstruct PID-PCID dataset (following this structure `https://github.com/reconstruct/SemanticSegmentation/blob/jae.refactoring/docs/DATASET.md`) to `/media/storage1/<USER>/label_dataset/reconstruct/downloads/`  
+2. Run `segmenter/dataset/reconstruct/run.py`. This will give the download. Make sure to specifcy whether to use all PIDs or a specific PID within the `/media/storage1/<USER>/label_dataset/reconstruct/downloads/`.
+```sh
+python dataset/reconstruct/data_transform.py --PID <PID>
+```
+The folder structure in `media/storage1/<USER>/label_dataset/reconstruct/` will look similar to cityscape's. E.g.:
+```
+RECONSTRUCT/
+    train/
+        images/
+            PC_ID/
+                UUID_{direction}.jpg    # direction = front / back etc
+        labels/
+            PC_ID/
+                UUID_{direction}.bin    # labels
+    validation/
+        ...
+            ...
+    test/
+        ...
+            ...
+```
+3. Make sure your WORK path is defined in your `.bashrc`:
+``` sh
+export WORK=/home/<USER>/vit_project/segmenter
+```
+
 # Segmenter: Transformer for Semantic Segmentation
 
 ![Figure 1 from paper](./overview.png)

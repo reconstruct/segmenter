@@ -1,4 +1,8 @@
-#TODO: the structure below is a copy of cityscapes. REVIEW
+#TODO: the structure below is a copy of cityscapes.
+# This should be readapted from our legend.json, located in the PCID directory.
+# It can be reused, as it is the same legend for all point clouds
+# NOTE: This will be the final color of our annotations. IT IS NOT the current mask color in the annotation bin file
+# Question, does the id have to match the label in the annotation itself?
 - color:
   - 128
   - 64
